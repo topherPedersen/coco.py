@@ -2,7 +2,7 @@ import coco
 set = coco.set
 busywork = coco.busywork
 
-set()
+set(15, 15, "white")
 
 # Run Main Game Loop
 run = True
