@@ -14,7 +14,7 @@ screen.bgcolor("black")
 screen.screensize()
 screen.setup(width = 1.0, height = 1.0)
 
-'''
+
 # Create an Array Named "pixel" 
 # Each "pixel" Will Represent a Dot on the Player's Screen
 pixel = []
@@ -156,9 +156,9 @@ for y in range(30):
         pixel[pixelIndex].showturtle()
         pixelIndex = pixelIndex + 1
 
-def pset():
-    print("PSET() FUNCTION CALLED!")
-'''
+def set():
+    print("SET() FUNCTION CALLED!")
+
 
 # Define placeholder Function (placeholder function used in place of main game logic in quick-start guide)
 placeholder_x = -440
@@ -171,7 +171,7 @@ ghost.goto(placeholder_x, placeholder_y)
 ghost.shape("square")
 ghost.color("black") # set color to black to make ghost invisible
 ghost.showturtle()
-def placeholder():
+def busywork():
     global placeholder_x
     global placeholder_y
     global cycle
@@ -192,7 +192,3 @@ def placeholder():
         cycle = 0
     else:
         cycle = cycle + 1
-
-# Main Game Loop (Keeps Game Window From Closing)
-def end():
-    tkinter.mainloop()
