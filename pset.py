@@ -3,14 +3,17 @@ import turtle
 
 # Create Game Window
 screen = turtle.Screen()
-screen.setup(500, 500)
-screen.bgcolor("black")
+screen.setup(600, 600)
+screen.bgcolor("green")
 
 pixel = []
 newTurtle = turtle.Turtle()
+newTurtle.hideturtle()
+newTurtle.penup()
 newTurtle.goto(-240, 240)
 newTurtle.shape("square")
 newTurtle.color("white")
+newTurtle.showturtle()
 pixel.append(newTurtle)
 
 i = 0
