@@ -155,5 +155,9 @@ for y in range(30):
         pixel[pixelIndex].showturtle()
         pixelIndex = pixelIndex + 1
 
+def pset():
+    print("PSET() FUNCTION CALLED!")
+
 # Main Game Loop (Keeps Game Window From Closing)
-tkinter.mainloop()
+def end():
+    tkinter.mainloop()
