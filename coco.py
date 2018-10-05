@@ -14,13 +14,17 @@ screen.bgcolor("black")
 screen.screensize()
 screen.setup(width = 1.0, height = 1.0)
 
-
-# Create an Array Named "pixel" 
-# Each "pixel" Will Represent a Dot on the Player's Screen
+# Create a Multi-Dimensional Array Which Will Represent Our On-Screen Grid
 pixel = []
-pixelIndex = 0
-for x in range(900):
-	pixel.append(True) # Assign Placeholder Value
+# Y Position Represents a Row in Our Multi-Dimensional Array
+for y in range(30):
+    newRow = []
+    pixel.append(newRow) 
+    # X Position Represents a Single Space in an Individual Row in Our Multi-Dimensional Array
+    for x in range(30):
+        newTurtle = turtle.Turtle(visible=False)
+        newRow.append(newTurtle)
+
 
 # yCoordinate = 290
 for y in range(30):
@@ -147,17 +151,16 @@ for y in range(30):
            xCoordinate = 270
         elif x == 29:
            xCoordinate = 290
-        pixel[pixelIndex] = turtle.Turtle(visible=False)
-        pixel[pixelIndex].speed(0)
-        pixel[pixelIndex].penup()
-        pixel[pixelIndex].goto(xCoordinate, yCoordinate)
-        pixel[pixelIndex].shape("square")
-        pixel[pixelIndex].color("green")
-        pixel[pixelIndex].showturtle()
-        pixelIndex = pixelIndex + 1
+        pixel[x][y].speed(0)
+        pixel[x][y].penup()
+        pixel[x][y].goto(xCoordinate, yCoordinate)
+        pixel[x][y].shape("square")
+        pixel[x][y].color("green")
+        pixel[x][y].showturtle()
 
-def set():
-    print("SET() FUNCTION CALLED!")
+def set(x, y, c):
+    global pixel
+    pixel[x][y].color(c)
 
 
 # Define placeholder Function (placeholder function used in place of main game logic in quick-start guide)
