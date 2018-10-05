@@ -1,14 +1,10 @@
 import coco
-# pset = coco.pset
-placeholder = coco.placeholder
+set = coco.set
+busywork = coco.busywork
 
-# pset()
-
-# Define Main Game Loop
-def mainGameLoop():
-    placeholder() # replace placeholder() function with main game loop logic
+set()
 
 # Run Main Game Loop
 run = True
 while run == True:
-	mainGameLoop()
+	busywork()
