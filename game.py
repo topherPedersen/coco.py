@@ -7,4 +7,4 @@ set(15, 15, "white")
 # Run Main Game Loop
 run = True
 while run == True:
-	busywork()
+	busywork() # replace busywork() with your game logic
