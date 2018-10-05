@@ -1,5 +1,5 @@
 # Import the Tkinter & Turtle Graphics Modules
-import Tkinter
+import tkinter
 import turtle
 
 screen = turtle.Screen()
@@ -86,4 +86,4 @@ for x in range(30):
     pixelIndex = pixelIndex + 1
 
 # Main Game Loop (Keeps Game Window From Closing)
-Tkinter.mainloop()
+tkinter.mainloop()
