@@ -1,6 +1,13 @@
-# Import the Tkinter & Turtle Graphics Modules
-import tkinter
-import turtle
+import sys
+
+# Check Python Version Number (Python Version 3+ Required)
+if sys.version_info[0] < 3:
+    print("ERROR: 'pmode' Module Requires Python Version 3.0 or Higher")
+    exit() # kill script
+else:
+    # Import the Tkinter & Turtle Graphics Modules
+    import tkinter
+    import turtle
 
 screen = turtle.Screen()
 screen.bgcolor("black")
