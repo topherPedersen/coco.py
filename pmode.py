@@ -146,9 +146,8 @@ for y in range(30):
            xCoordinate = 270
         elif x == 29:
            xCoordinate = 290
-        pixel[pixelIndex] = turtle.Turtle()
+        pixel[pixelIndex] = turtle.Turtle(visible=False)
         pixel[pixelIndex].speed(0)
-        pixel[pixelIndex].hideturtle()
         pixel[pixelIndex].penup()
         pixel[pixelIndex].goto(xCoordinate, yCoordinate)
         pixel[pixelIndex].shape("square")
